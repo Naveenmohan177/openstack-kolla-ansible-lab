@@ -1,0 +1,27 @@
+# Secrets and sensitive files
+/etc/kolla/passwords.yml
+passwords.yml
+*.pem
+*.key
+*.crt
+id_rsa
+id_ed25519
+*.env
+.env
+
+# Runtime/generated files
+*.retry
+__pycache__/
+*.log
+.cache/
+venv/
+kolla-venv/
+
+# Local/private SSH files
+.ssh/
+
+# Large storage/runtime files
+*.img
+*.qcow2
+*.raw
+*.iso

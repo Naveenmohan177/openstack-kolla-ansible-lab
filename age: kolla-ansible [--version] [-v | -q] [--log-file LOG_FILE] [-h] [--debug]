@@ -1,0 +1,42 @@
+usage: kolla-ansible [--version] [-v | -q] [--log-file [3mLOG_FILE[0m] [-h] [--debug]
+
+Kolla Ansible Command Line Interface (CLI)
+
+[4moptions[0m:
+  --version             show program's version number and exit
+  -v, --verbose         Increase verbosity of output. Can be repeated.
+  -q, --quiet           Suppress output except warnings and errors.
+  --log-file [3mLOG_FILE[0m
+                        Specify a file to log output. Disabled by default.
+  -h, --help            Show help message and exit.
+  --debug               Show tracebacks on errors.
+
+[4mCommands[0m:
+  [36mbootstrap-servers[39m  Bootstrap servers with Kolla Ansible deploy dependencies
+  [36mcertificates [39m  Generate self-signed certificate for TLS *For Development Only*
+  [36mcheck        [39m  Check container status
+  [36mcomplete     [39m  print bash completion command[90m (cliff)[39m
+  [36mdeploy       [39m  Generate config, bootstrap and start all Kolla Ansible containers
+  [36mdeploy-bifrost[39m  Deploy and start bifrost container
+  [36mdeploy-containers[39m  Only deploy and start containers (no config updates or bootstrapping)
+  [36mdeploy-servers[39m  Enroll and deploy servers with bifrost
+  [36mdestroy      [39m  Destroy Kolla Ansible containers, volumes and host configuration!
+  [36mgather-facts [39m  Gather Ansible facts on hosts
+  [36mgenconfig    [39m  Generate configuration files for services. No container changes!
+  [36mhelp         [39m  print detailed help for another command[90m (cliff)[39m
+  [36minstall-deps [39m  Install Ansible Galaxy dependencies
+  [36mmariadb-backup[39m  Take a backup of MariaDB databases. See help for options
+  [36mmariadb-recovery[39m  Recover a completely stopped MariaDB cluster
+  [36mmigrate-container-engine[39m  Migrate the container engine of the deployed OpenStack
+  [36mnova-libvirt-cleanup[39m  Clean up disabled nova_libvirt containers
+  [36moctavia-certificates[39m  Generate certificates for octavia deployment
+  [36mpost-deploy  [39m  Do post deploy on deploy node
+  [36mprechecks    [39m  Do pre-deployment checks for hosts
+  [36mprune-images [39m  Prune orphaned Kolla Ansible docker images
+  [36mpull         [39m  Pull all images for containers. Only pulls, no container changes
+  [36mrabbitmq-reset-state[39m  Force reset the state of RabbitMQ
+  [36mreconfigure  [39m  Reconfigure enabled OpenStack service
+  [36mstop         [39m  Stop Kolla Ansible containers
+  [36mupgrade      [39m  Upgrades existing OpenStack Environment
+  [36mupgrade-bifrost[39m  Upgrades an existing bifrost container
+  [36mvalidate-config[39m  Validate configuration files for enabled OpenStack services
